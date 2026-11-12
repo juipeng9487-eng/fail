@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>專案照片</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #EFEFE6;
+            color: #2C4A34;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .exp {
+            max-width: 1500px;
+            margin: auto;
+            margin-top:125px;
+            display: grid;
+            grid-template-columns: repeat(4, 400px);
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .exp img {
+            width: 100%;            
+            height:400px;
+            object-fit: contain;
+            border-radius: 12px;
+            
+        }
+        
+     
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #35533F;
+        }
+
+        .card1{
+            display:grid;
+            grid-column: 1/2;
+        }
+
+        .card2{
+            display:grid;
+            grid-column: 2/3;
+        }
+
+        .card3{
+            display:grid;
+            grid-column: 3/4;
+        }
+
+        .card4{
+            display:grid;
+            grid-column: 4/5;
+        }
+
+        @media (max-width: 768px) {
+            .exp {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>實驗照片</h1>
+
+    <div class="exp">
+
+    
+        <img src="image/project3.png" alt="實驗報告" class="card1">
+
+        <img src="image/project3_2.png" alt="實驗報告" class="card2">
+
+        <img src="image/project3_3.png" alt="實驗報告" class="card3">
+
+        <img src="image/project3_4.png" alt="實驗報告" class="card4">
+    </div>
+
+    <a href="index.html" class="back">返回個人履歷</a>
+
+</body>
+</html>
